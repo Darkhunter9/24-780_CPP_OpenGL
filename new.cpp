@@ -8,6 +8,6 @@ int main(void)
     /* code */
     int a[] = {12, 34, 56, 78};
     printf("%d\n",a[0]);
-    std::cout << a[1] << "\n" << sizeof(a)/sizeof(a[0]);
+    std::cout << a[1];
     return 0;
 }
