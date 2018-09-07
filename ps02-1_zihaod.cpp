@@ -30,13 +30,12 @@ int main(void)
 
     int start = time(NULL);
 
+    srand(unsigned(time(NULL)));
+    int answer,typing;
     for(int i = 0; i < 10; i++)
     {
-        int answer,typing;
-        srand(unsigned(time(NULL)));
         answer=rand()%1000;
 
-    
         while(true){
             cout << "Type " << answer << ":";
             cin >> typing;

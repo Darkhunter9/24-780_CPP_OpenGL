@@ -25,15 +25,14 @@ Description:
 
 using namespace std;
 
-void shuffleArray(int array[144], int swaptime)
+void shuffleArray(int array[], int swaptime)
 {
+    srand(unsigned(time(NULL)));
+    int no1;
     for(int i = 0; i < swaptime; i++)
     {  
-    int no1,no2;
-    srand(unsigned(time(NULL)));
     no1 = rand() % swaptime;
-    no2 = rand() % swaptime;
-    swap(array[no1], array[no2]);
+    swap(array[i], array[no1]);
     }
 }
 
@@ -69,7 +68,7 @@ int main(void)
 
         cin >> card_number;
         
-        if (card_number > 1 and card_number <= maximum){
+        if (card_number >= 1 and card_number <= maximum){
             break;
         }
         else{
@@ -109,7 +108,7 @@ int main(void)
     double rate = temp1 / temp2 * 100;
     cout << "You answered " << card_number << " problems in " << stop-start << " seconds." << endl;
     cout << "You answered " << correct << " problems correctly " << "(" << setprecision(2)<<fixed<<rate << "%)." << endl;
-
+    
     system("pause");
     return 0;
 }
