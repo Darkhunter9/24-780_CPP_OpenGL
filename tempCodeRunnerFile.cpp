@@ -1,13 +1,18 @@
-# include <stdio.h>
-# include <iostream>
-# include <stdlib.h>
-using namespace std;
-
+#include <stdio.h>
+void swapInt(int a[2])
+{
+    int c;
+    c=a[0];
+    a[0]=a[1];
+    a[1]=c;
+}
 int main(void)
 {
-    /* code */
-    int a[] = {12, 34, 56, 78};
-    printf("%d\n",a[0]);
-    std::cout << a[1] << "\n" << sizeof(a)/sizeof(a[0]);
+    int n[2] = { 1, 2 };
+    // n[0]=1;
+    // n[1]=2;
+    printf("Before: n[0]=%d n[1]=%d\n",n[0],n[1]);
+    swapInt(n);
+    printf("After: n[0]=%d n[1]=%d\n",n[0],n[1]);
     return 0;
 }
