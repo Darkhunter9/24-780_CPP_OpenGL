@@ -24,7 +24,7 @@ using namespace std;
 int main(void)
 {
     cout << "24-780-B Eng Computation Problem Set 2-1\nFast Number Typing Game" << endl;
-    cout << "Press the ENTER key to start >";
+    cout << "Press the ENTER key when ready:";
     
     while('\n' != getchar());
 
@@ -49,7 +49,7 @@ int main(void)
     }
 
     int stop = time(NULL);
-    cout << "Elapsed " << stop-start << " seconds" << endl;
+    cout << "Elapsed " << stop-start << " seconds." << endl;
     system("pause");
     return 0;
 }

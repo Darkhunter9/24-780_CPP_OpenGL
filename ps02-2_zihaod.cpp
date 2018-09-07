@@ -19,7 +19,6 @@ Description:
 #include <time.h>
 #include <iostream>
 #include <string>
-#include <array>
 #include <math.h>
 #include <iomanip>
 
@@ -31,8 +30,8 @@ void shuffleArray(int array[], int swaptime)
     int no1;
     for(int i = 0; i < swaptime; i++)
     {  
-    no1 = rand() % swaptime;
-    swap(array[i], array[no1]);
+        no1 = rand() % swaptime;
+        swap(array[i], array[no1]);
     }
 }
 
@@ -54,31 +53,35 @@ int main(void)
     cin >> include1112;
     
     // determine card number
-    while(true){
+    while(true)
+    {
         cout << "How many flash cards to work on?";
-        if ("Y" == include1112) {
+        if ("Y" == include1112) 
+        {
             cout << "(between 1 and 144):";
             maximum = 144;
         }
         
-        else{
+        else
+        {
             cout << "(between 1 and 100):";
             maximum = 100;
         }
 
         cin >> card_number;
         
-        if (card_number >= 1 and card_number <= maximum){
+        if ((card_number >= 1) && (card_number <= maximum)) 
+        {
             break;
         }
-        else{
+        else
+        {
             cout << "The number of cards must be between 1 and " << maximum << endl;
         }
     }
 
     //shuffle the cards
-    //array<int, 144> noarray;
-    int array[maximum];
+    int array[144];
     for(int i = 0; i < maximum; i++)
     {
         array[i] = i;
@@ -96,9 +99,16 @@ int main(void)
        int second_number = array[i] % 10;
        cout << first_number << "*" << second_number << ":";
        cin >> answer;
-       if (first_number*second_number == answer) {
+       if (first_number*second_number == answer) 
+       {
            correct++;
        }
+       else
+       {
+           cout << "The answer is wrong." << endl;
+           cout << "The right answer is:" << first_number * second_number << endl;
+       }
+       
     }
 
     stop = time(NULL);
