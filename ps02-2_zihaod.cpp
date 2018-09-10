@@ -47,7 +47,7 @@ int main(void)
 {
     // whether to include 11 and 12
     string include1112;
-    int maximum, card_number;
+    int maximum, card_number,dividenum;
     int start, stop;
     cout << "Whether to include 11 and 12 (Y/N):";
     cin >> include1112;
@@ -60,12 +60,14 @@ int main(void)
         {
             cout << "(between 1 and 144):";
             maximum = 144;
+            dividenum = 12;
         }
         
         else
         {
             cout << "(between 1 and 100):";
             maximum = 100;
+            dividenum = 10;
         }
 
         cin >> card_number;
@@ -95,8 +97,8 @@ int main(void)
 
     for(int i = 0; i < card_number; i++)
     {
-       int first_number = array[i] / 10;
-       int second_number = array[i] % 10;
+       int first_number = array[i] / dividenum + 1;
+       int second_number = array[i] % dividenum + 1;
        cout << first_number << "*" << second_number << ":";
        cin >> answer;
        if (first_number*second_number == answer) 
