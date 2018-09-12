@@ -1,10 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <iostream>
+#include <string.h>
 
 int main(void)
 {
-    for(int i = 0; i < 5; i++)
-    {
-        printf("%d", i);
-    }
+    char str[256];
+    strcpy(str,"ABCDEFG");
+    str[5]=0;
+    printf("%s\n",str);
+    system("pause");
     return 0;
 }
