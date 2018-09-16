@@ -1,7 +1,7 @@
 // Drawing lines 9/12/18
 
 #include <stdio.h>
-#include "C:\Users\Administrator\Desktop\cpp\fssimplewindow.h"
+#include "fssimplewindow.h"
 
 int main(void)
 {
