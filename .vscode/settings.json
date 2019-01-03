@@ -64,7 +64,16 @@
         "tuple": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "thread": "cpp",
+        "chrono": "cpp",
+        "condition_variable": "cpp",
+        "cstring": "cpp",
+        "deque": "cpp",
+        "functional": "cpp",
+        "memory": "cpp",
+        "mutex": "cpp",
+        "ratio": "cpp"
     } // 效果稍好，但太卡，故关掉
 }
 

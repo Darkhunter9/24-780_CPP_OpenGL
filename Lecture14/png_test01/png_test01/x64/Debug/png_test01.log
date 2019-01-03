@@ -1,0 +1,6 @@
+﻿  fssimplewindow.cpp
+c:\users\administrator\desktop\cpp\lecture14\png_test01\png_test01\fssimplewindow.cpp(896): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  texture.cpp
+  yspng.cpp
+  Generating Code...
+  png_test01.vcxproj -> C:\Users\Administrator\Desktop\cpp\Lecture14\png_test01\x64\Debug\png_test01.exe

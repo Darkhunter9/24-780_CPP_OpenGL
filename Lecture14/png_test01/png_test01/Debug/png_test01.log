@@ -1,0 +1,4 @@
+﻿  texture.cpp
+c:\cpp_ng\png_test01\png_test01\texture.cpp(28): warning C4101: 'fn1': unreferenced local variable
+c:\cpp_ng\png_test01\png_test01\texture.cpp(28): warning C4101: 'fn2': unreferenced local variable
+  png_test01.vcxproj -> C:\cpp_ng\png_test01\Debug\png_test01.exe
